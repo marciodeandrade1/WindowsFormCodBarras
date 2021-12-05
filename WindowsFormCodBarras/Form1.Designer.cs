@@ -30,11 +30,11 @@ namespace WindowsFormCodBarras
         private void InitializeComponent()
         {
             this.btnEncode = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEncode = new System.Windows.Forms.TextBox();
             this.pic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDecode = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDecode = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
@@ -47,13 +47,14 @@ namespace WindowsFormCodBarras
             this.btnEncode.TabIndex = 0;
             this.btnEncode.Text = "Encode";
             this.btnEncode.UseVisualStyleBackColor = true;
+            this.btnEncode.Click += new System.EventHandler(this.btnEncode_Click);
             // 
-            // textBox1
+            // txtEncode
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 23);
-            this.textBox1.TabIndex = 1;
+            this.txtEncode.Location = new System.Drawing.Point(80, 122);
+            this.txtEncode.Name = "txtEncode";
+            this.txtEncode.Size = new System.Drawing.Size(286, 23);
+            this.txtEncode.TabIndex = 1;
             // 
             // pic
             // 
@@ -81,13 +82,14 @@ namespace WindowsFormCodBarras
             this.btnDecode.TabIndex = 0;
             this.btnDecode.Text = "Decode";
             this.btnDecode.UseVisualStyleBackColor = true;
+            this.btnDecode.Click += new System.EventHandler(this.btnDecode_Click);
             // 
-            // textBox2
+            // txtDecode
             // 
-            this.textBox2.Location = new System.Drawing.Point(80, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 23);
-            this.textBox2.TabIndex = 1;
+            this.txtDecode.Location = new System.Drawing.Point(80, 151);
+            this.txtDecode.Name = "txtDecode";
+            this.txtDecode.Size = new System.Drawing.Size(286, 23);
+            this.txtDecode.TabIndex = 1;
             // 
             // label2
             // 
@@ -106,8 +108,8 @@ namespace WindowsFormCodBarras
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pic);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDecode);
+            this.Controls.Add(this.txtEncode);
             this.Controls.Add(this.btnDecode);
             this.Controls.Add(this.btnEncode);
             this.Name = "Form1";
@@ -122,11 +124,11 @@ namespace WindowsFormCodBarras
         #endregion
 
         private System.Windows.Forms.Button btnEncode;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEncode;
         private System.Windows.Forms.PictureBox pic;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDecode;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDecode;
         private System.Windows.Forms.Label label2;
     }
 }
